@@ -11,7 +11,7 @@ def main():
 
 @app.route("/data")
 def large_payload():
-    df = pd.DataFrame(np.zeros(shape=(10000, 5000)))
+    df = pd.DataFrame(np.zeros(shape=(7000, 5000)))
     return df.to_json(orient='records')
     
 
