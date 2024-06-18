@@ -1,0 +1,15 @@
+{
+    "build": { 
+        "dockerfile": "../Dockerfile",
+        "context": ".."
+    },
+    "workspaceMount": "source=${localWorkspaceFolder},target=/test,type=bind,consistency=cached",
+    "workspaceFolder": "/test",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    }
+}
